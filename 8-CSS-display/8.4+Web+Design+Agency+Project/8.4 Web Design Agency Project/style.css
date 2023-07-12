@@ -6,6 +6,7 @@ body {
   flex-direction: column;
   min-height: 95vh;
 }
+
 .main {
   flex: 1;
 }
@@ -18,4 +19,30 @@ footer {
   text-align: right;
   color: midnightblue;
 }
+
+.tile-image{
+  width: 200px;
+  height: 200px;
+  float: left;
+
+}
+
+span{
+  color: purple;
+}
+
+.left.card{
+  /* display: inline-block; */
+  float: left;
+  width: 40%;
+}
+
+.right.card{
+  /* display: inline-block; */
+  float: right;
+  width: 40%;
+}
+
+.card-text{margin: 20px;}
+
 
