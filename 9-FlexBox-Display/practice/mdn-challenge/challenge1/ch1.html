@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Flexbox: Task 1</title>
+
+
+    <style>
+      .container{
+        background-color: purple;
+        padding: .5rem;
+        size: 100%;
+        display: flex;
+        gap: 1rem;
+        /* justify-content: space-around; */
+        justify-content: flex-end;
+
+      }        
+      ul{
+        list-style-type: none;
+      }
+      a{text-decoration: none;}
+
+      
+      li{background-color: bisque;
+        padding: .5rem;
+      border-radius: 1rem;}
+    </style>
+
+
+
+</head>
+
+<body>
+
+  <nav>
+    <ul>
+      <div class="container">
+      <li><a href="/">Home</a></li>
+      <li><a href="/about">About Us</a></li>
+      <li><a href="/products">Our Products</a></li>
+      <li><a href="/contact">Contact Us</a></li>
+    </ul>
+  </div>
+  </nav>
+
+</body>
+
+</html>
