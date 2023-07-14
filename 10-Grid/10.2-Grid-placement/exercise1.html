@@ -11,7 +11,7 @@
       margin: 0;
     }
 
-    .container {
+    .grid-container {
       height: 100vh;
       display: grid;
       gap: 3rem;
@@ -19,7 +19,7 @@
       grid-template-rows: 1fr 1fr;
     }
 
-    .item {
+    .grid-item {
       font-size: 5rem;
       color: white;
       font-family: Arial, Helvetica, sans-serif;
@@ -28,14 +28,27 @@
       See goal1 image.
       */
     }
+
+    .flex-container{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      
+    }
   </style>
 </head>
 
 <body>
-  <div class="container">
-    <div class="item cowboy">🤠</div>
-    <div class="item astronaut">👨‍🚀</div>
-    <div class="item book">📖</div>
+  <div class="grid-container">
+    <div class="grid-item cowboy flex-container">
+      <div class="flex-item">🤠</div>
+    </div>
+    <div class="grid-item astronaut flex-container">
+      <div class="flex-item">👨‍🚀</div>
+    </div>
+    <div class="grid-item book flex-container">
+      <div class="flex-item">📖</div>
+    </div>
   </div>
 </body>
 
