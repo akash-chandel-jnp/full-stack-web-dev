@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .grid-container{
+            display: grid;
+            grid-template-rows: 200px  auto;
+            grid-template-columns: 300px 200px auto;
+        }
+
+        .grid-item{
+            background-color:orange;
+            border: 5px solid gold;
+            color: purple;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Auto Grid Sizing</h1>
+    <p>Auto grid sizing  for columen here means first and second column have Fixed sizing of 300px and 200 px , while the third row defined using auto , will take up the remaining space.</p>
+    <p>But if row is defined using auto then it does not take up the whole remaining space below it, rather it takes only the space required for its content height</p>
+    <div class="grid-container">
+        <div class="grid-item">1</div>
+        <div class="grid-item">2</div>
+        <div class="grid-item">3</div>
+        
+        <div class="grid-item">
+            4 
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit consequuntur ipsum sequi, minus adipisci nam error architecto dignissimos dolorum quibusdam nulla obcaecati id nostrum nisi quod voluptatibus non iste perferendis.</p> 
+
+        </div>
+        <div class="grid-item">5</div>
+
+    </div>
+    
+</body>
+</html>
